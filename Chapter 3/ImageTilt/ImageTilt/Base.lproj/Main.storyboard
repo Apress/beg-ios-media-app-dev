@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n9l-If-gVz">
+                                <rect key="frame" x="-50" y="-50" width="700" height="700"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tilt Your Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yY-Fs-gqH">
+                                <rect key="frame" x="221.5" y="277" width="157" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="Npc-N4-YFx"/>
+                                    <constraint firstAttribute="height" constant="45" id="sli-2j-a9J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="7yY-Fs-gqH" secondAttribute="centerY" id="Aa7-Ui-i2V"/>
+                            <constraint firstAttribute="centerX" secondItem="n9l-If-gVz" secondAttribute="centerX" id="EZR-DX-Q8l"/>
+                            <constraint firstAttribute="centerY" secondItem="n9l-If-gVz" secondAttribute="centerY" id="KCm-3t-sJe"/>
+                            <constraint firstAttribute="centerX" secondItem="7yY-Fs-gqH" secondAttribute="centerX" id="XYd-xU-La5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n9l-If-gVz" secondAttribute="trailing" constant="-66" id="fWP-Vf-hnC"/>
+                            <constraint firstItem="n9l-If-gVz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-50" id="nnh-uV-5ub"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="n9l-If-gVz" secondAttribute="bottom" constant="-50" id="odt-rQ-tAq"/>
+                            <constraint firstItem="n9l-If-gVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-66" id="vvr-Ax-JcL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="n9l-If-gVz" id="PqY-FA-3Nn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

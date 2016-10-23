@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hl1-M8-Z10">
+                                <rect key="frame" x="16" y="521" width="568" height="50"/>
+                                <color key="backgroundColor" red="0.92549026010000002" green="0.23921570180000001" blue="0.2078431547" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hdf-Yt-x35"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rKE-KV-qcM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YX-R8-smn">
+                                <rect key="frame" x="280" y="448" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="CyL-gI-gED"/>
+                                    <constraint firstAttribute="height" constant="40" id="g91-WL-w2M"/>
+                                </constraints>
+                                <state key="normal" image="play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vgk-oi-ebx"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click on the Microphone to Begin Recording!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NCr-he-amJ">
+                                <rect key="frame" x="195" y="62" width="210" height="71"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="c7I-Of-bh6"/>
+                                    <constraint firstAttribute="height" constant="71" id="mm7-5R-S1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vq0-Ly-c7x">
+                                <rect key="frame" x="247" y="155" width="106" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="dAi-d0-45p"/>
+                                    <constraint firstAttribute="width" constant="106" id="r7I-B0-KXc"/>
+                                </constraints>
+                                <state key="normal" image="mic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaE-fg-RJz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording : Inactive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8V-NT-SKn">
+                                <rect key="frame" x="190" y="378" width="220" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="7yF-Y3-G96"/>
+                                    <constraint firstAttribute="height" constant="35" id="xh1-fg-9LP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hl1-M8-Z10" secondAttribute="bottom" constant="29" id="5Ma-2A-FGg"/>
+                            <constraint firstItem="NCr-he-amJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="Bg9-f9-5h5"/>
+                            <constraint firstItem="Hl1-M8-Z10" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CG5-rX-9Ja"/>
+                            <constraint firstItem="2YX-R8-smn" firstAttribute="top" secondItem="S8V-NT-SKn" secondAttribute="bottom" constant="35" id="Ilm-bN-qjh"/>
+                            <constraint firstItem="Hl1-M8-Z10" firstAttribute="top" secondItem="2YX-R8-smn" secondAttribute="bottom" constant="33" id="Ncq-LO-YOd"/>
+                            <constraint firstAttribute="centerX" secondItem="2YX-R8-smn" secondAttribute="centerX" id="Pny-GK-eL3"/>
+                            <constraint firstItem="vq0-Ly-c7x" firstAttribute="top" secondItem="NCr-he-amJ" secondAttribute="bottom" constant="22" id="e0d-6z-Z8W"/>
+                            <constraint firstAttribute="centerX" secondItem="vq0-Ly-c7x" secondAttribute="centerX" id="gjP-yL-ABJ"/>
+                            <constraint firstAttribute="centerX" secondItem="NCr-he-amJ" secondAttribute="centerX" id="hEy-Vz-WRN"/>
+                            <constraint firstItem="Hl1-M8-Z10" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t29-1Y-34e"/>
+                            <constraint firstAttribute="centerX" secondItem="S8V-NT-SKn" secondAttribute="centerX" id="v2W-6Y-CxL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="2YX-R8-smn" id="VRr-IX-4El"/>
+                        <outlet property="recordButton" destination="vq0-Ly-c7x" id="8bx-u5-FZv"/>
+                        <outlet property="timeLabel" destination="S8V-NT-SKn" id="uJE-3L-sQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mic" width="120" height="120"/>
+        <image name="play" width="80" height="80"/>
+    </resources>
+</document>

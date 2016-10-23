@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-ds-xiR">
+                                <rect key="frame" x="131" y="464" width="338" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.38535239469999999" blue="0.28736156509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fym-qa-U9t"/>
+                                </constraints>
+                                <state key="normal" title="Play All">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3e-gw-3uf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuL-jg-XXB">
+                                <rect key="frame" x="131" y="385" width="338" height="40"/>
+                                <color key="backgroundColor" red="0.48978289955899001" green="0.67173005668894659" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="9yt-Hn-11w"/>
+                                    <constraint firstAttribute="height" constant="40" id="gbb-Ta-pUX"/>
+                                </constraints>
+                                <state key="normal" title="Choose File">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mEa-Za-SRL" kind="presentation" identifier="showFilePicker" id="tbm-8X-Hy8"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwv-4x-oxb">
+                                <rect key="frame" x="131" y="85" width="338" height="255"/>
+                                <connections>
+                                    <segue destination="dYj-6O-tW0" kind="embed" identifier="setPlayerContent" id="gox-gr-W4w"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HuL-jg-XXB" firstAttribute="trailing" secondItem="cXp-ds-xiR" secondAttribute="trailing" id="CpU-0L-vIi"/>
+                            <constraint firstItem="Hwv-4x-oxb" firstAttribute="trailing" secondItem="HuL-jg-XXB" secondAttribute="trailing" id="Eft-tb-eS7"/>
+                            <constraint firstItem="HuL-jg-XXB" firstAttribute="leading" secondItem="cXp-ds-xiR" secondAttribute="leading" id="KhR-2K-nIU"/>
+                            <constraint firstItem="HuL-jg-XXB" firstAttribute="leading" secondItem="Hwv-4x-oxb" secondAttribute="leading" id="NSc-Vy-WjL"/>
+                            <constraint firstItem="Hwv-4x-oxb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="Qqk-sD-HIH">
+                                <variation key="heightClass=regular-widthClass=compact" constant="111"/>
+                            </constraint>
+                            <constraint firstItem="Hwv-4x-oxb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Reu-Qc-4j1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cXp-ds-xiR" secondAttribute="bottom" constant="96" id="cj0-CU-eG5"/>
+                            <constraint firstItem="HuL-jg-XXB" firstAttribute="top" secondItem="Hwv-4x-oxb" secondAttribute="bottom" constant="45" id="gj4-14-lIJ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="116"/>
+                            </constraint>
+                            <constraint firstItem="cXp-ds-xiR" firstAttribute="top" secondItem="HuL-jg-XXB" secondAttribute="bottom" constant="39" id="u7E-ro-AqL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseFileButton" destination="HuL-jg-XXB" id="vdz-Lz-NWz"/>
+                        <outlet property="playAllButton" destination="cXp-ds-xiR" id="pEX-uv-zuf"/>
+                        <outlet property="playerViewContainer" destination="Hwv-4x-oxb" id="aWT-tv-scT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="312.75"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="64b-83-0X7">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="dYj-6O-tW0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpp-Sc-pgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051.5" y="-307.5"/>
+        </scene>
+        <!--Available Files-->
+        <scene sceneID="gCC-rc-4ZS">
+            <objects>
+                <tableViewController id="dCR-z0-LsC" customClass="FileViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AYL-9m-OQm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fileCell" textLabel="3ve-X1-0Zm" style="IBUITableViewCellStyleDefault" id="Wvn-c4-Hmy">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wvn-c4-Hmy" id="dxO-Mq-Otk">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ve-X1-0Zm">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dCR-z0-LsC" id="lOx-Ps-1qp"/>
+                            <outlet property="delegate" destination="dCR-z0-LsC" id="dS6-uT-Wo1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Available Files" id="EYk-Pn-alC">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="kWk-4f-ORR">
+                            <connections>
+                                <action selector="closeView:" destination="dCR-z0-LsC" id="A0n-mN-9AI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXC-KV-9aY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.75" y="312.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="arL-R4-vhZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mEa-Za-SRL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UXV-Lc-vZC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dCR-z0-LsC" kind="relationship" relationship="rootViewController" id="XG0-pW-473"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQO-dX-kVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051.5" y="312.75"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,195 @@
+//
+//  ViewController.m
+//  MyVideoRecorder
+//
+//  Created by Ahmed Bakir on 11/22/14.
+//  Copyright (c) 2014 Ahmed Bakir. All rights reserved.
+//
+
+#import "MainViewController.h"
+
+@interface MainViewController ()
+
+@end
+
+@implementation MainViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadStateChanged:) name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showFilePicker"]) {
+        NSMutableArray *videoArray = [NSMutableArray new];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSError *error = nil;
+        
+        NSArray *allFiles = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
+        
+        if (error == nil) {
+            
+            for (NSString *file in allFiles) {
+                NSString *fileExtension = [[file pathExtension] lowercaseString];
+                
+                if ([fileExtension isEqualToString:@"m4v"] || [fileExtension isEqualToString:@"mov"]) {
+                    [videoArray addObject:file];
+                }
+            }
+            
+        } else {
+            NSLog(@"error looking up files: %@", [error description]);
+        }
+        
+        UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
+        FileViewController *fileVC = (FileViewController *)navigationController.topViewController;
+        fileVC.delegate = self;
+        fileVC.fileArray = videoArray;
+    }
+}
+
+#pragma mark - FileController delegate methods
+
+-(void)cancel
+{
+    //Dismisses the file picker
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)didFinishWithFile:(NSString *)filePath
+{
+    self.moviePlayer = nil;
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *relativePath = [documentsDirectory stringByAppendingPathComponent:filePath];
+    
+    NSURL *fileURL = [NSURL fileURLWithPath:relativePath];
+    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+    self.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
+    self.moviePlayer.allowsAirPlay = YES;
+    self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
+    self.moviePlayer.controlStyle = MPMovieControlStyleEmbedded;
+    
+    self.moviePlayer.view.frame = self.playerView.bounds;
+    [self.playerView addSubview:self.moviePlayer.view];
+    
+    [self.moviePlayer prepareToPlay];
+    
+    //Dismisses the file picker
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)playbackFinished:(NSNotification *) notification
+{
+    NSDictionary *userInfo = notification.userInfo;
+    NSNumber *finishReason = [userInfo objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
+    
+    if ([finishReason integerValue] == MPMovieFinishReasonPlaybackError) {
+        NSError *error = [userInfo objectForKey:@"error"];
+        NSString *errorString = [error description];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+    
+}
+
+-(void)loadStateChanged:(NSNotification *) notification
+{
+    if (self.moviePlayer.loadState == MPMovieLoadStatePlayable) {
+        [self.moviePlayer play];
+    }
+    
+}
+
+-(IBAction)showImagePicker:(id)sender
+{
+    self.videoRecorder = [[UIImagePickerController alloc] init];
+    self.videoRecorder.sourceType = UIImagePickerControllerSourceTypeCamera;
+    self.videoRecorder.mediaTypes = [NSArray arrayWithObject:(NSString *)kUTTypeMovie];
+    self.videoRecorder.delegate = self;
+    self.videoRecorder.videoMaximumDuration = 30.0f;
+    self.videoRecorder.videoQuality = UIImagePickerControllerQualityTypeMedium;
+    self.videoRecorder.allowsEditing = YES;
+    
+    [self presentViewController:self.videoRecorder animated:YES completion:nil];
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"movie.mov"];
+    
+    if ([[info objectForKey:UIImagePickerControllerMediaType] isEqualToString:(NSString *)kUTTypeMovie]) {
+        
+        NSURL *movieURL = nil;
+        
+        NSString *mediaUrlString = [[info objectForKey:UIImagePickerControllerMediaURL] absoluteString];
+        NSString *referenceUrlString = [[info objectForKey:UIImagePickerControllerReferenceURL] absoluteString];
+        
+        if (![mediaUrlString isEqualToString:referenceUrlString]) {
+            movieURL = [info objectForKey:UIImagePickerControllerMediaURL];
+        } else {
+            movieURL = [info objectForKey:UIImagePickerControllerReferenceURL];
+        }
+        
+        NSData *movieData = [NSData dataWithContentsOfURL:movieURL];
+        NSError *error = nil;
+        NSString *alertMessage = nil;
+        
+        //check if the file exists before trying to write it
+        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+            
+            NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+            [dateFormat setDateFormat:@"yyyyMMddHHmm"];
+            
+            NSString *dateString = [dateFormat stringFromDate:[NSDate date]];
+            
+            NSString *fileName = [NSString stringWithFormat:@"movie-%@.mov", dateString];
+            
+            filePath = [documentsDirectory stringByAppendingPathComponent:fileName];
+        }
+        
+        [movieData writeToFile:filePath options:NSDataWritingAtomic error:&error];
+        
+        if (error == nil) {
+            
+            [self didFinishWithFile:[filePath lastPathComponent]];
+        } else {
+            alertMessage = @"Could not save movie :(";
+            [self dismissViewControllerAnimated:YES completion:^{
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:alertMessage delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alertView show];
+            }];
+        }
+    }
+    
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+@end

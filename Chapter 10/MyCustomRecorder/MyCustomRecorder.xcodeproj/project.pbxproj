@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8706A15C1A218E23007D0F81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A15B1A218E23007D0F81 /* main.m */; };
+		8706A15F1A218E23007D0F81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A15E1A218E23007D0F81 /* AppDelegate.m */; };
+		8706A1621A218E23007D0F81 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A1611A218E23007D0F81 /* MainViewController.m */; };
+		8706A1651A218E23007D0F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8706A1631A218E23007D0F81 /* Main.storyboard */; };
+		8706A1671A218E23007D0F81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8706A1661A218E23007D0F81 /* Images.xcassets */; };
+		8706A16A1A218E23007D0F81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8706A1681A218E23007D0F81 /* LaunchScreen.xib */; };
+		8706A1761A218E23007D0F81 /* MyCustomRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A1751A218E23007D0F81 /* MyCustomRecorderTests.m */; };
+		8706A1891A218F6E007D0F81 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8706A1881A218F6E007D0F81 /* MediaPlayer.framework */; };
+		8706A1921A219032007D0F81 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A18B1A219032007D0F81 /* CameraViewController.m */; };
+		8706A1931A219032007D0F81 /* CustomPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A18D1A219032007D0F81 /* CustomPlayerController.m */; };
+		8706A1941A219032007D0F81 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A18F1A219032007D0F81 /* FileViewController.m */; };
+		8706A1951A219032007D0F81 /* VideoPlaybackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A1911A219032007D0F81 /* VideoPlaybackController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8706A1701A218E23007D0F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8706A14E1A218E23007D0F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8706A1551A218E23007D0F81;
+			remoteInfo = MyCustomRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8706A1561A218E23007D0F81 /* MyCustomRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCustomRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8706A15A1A218E23007D0F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8706A15B1A218E23007D0F81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8706A15D1A218E23007D0F81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8706A15E1A218E23007D0F81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8706A1601A218E23007D0F81 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8706A1611A218E23007D0F81 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8706A1641A218E23007D0F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8706A1661A218E23007D0F81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8706A1691A218E23007D0F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8706A16F1A218E23007D0F81 /* MyCustomRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8706A1741A218E23007D0F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8706A1751A218E23007D0F81 /* MyCustomRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomRecorderTests.m; sourceTree = "<group>"; };
+		8706A1881A218F6E007D0F81 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8706A18A1A219032007D0F81 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		8706A18B1A219032007D0F81 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		8706A18C1A219032007D0F81 /* CustomPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPlayerController.h; sourceTree = "<group>"; };
+		8706A18D1A219032007D0F81 /* CustomPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPlayerController.m; sourceTree = "<group>"; };
+		8706A18E1A219032007D0F81 /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		8706A18F1A219032007D0F81 /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		8706A1901A219032007D0F81 /* VideoPlaybackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlaybackController.h; sourceTree = "<group>"; };
+		8706A1911A219032007D0F81 /* VideoPlaybackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlaybackController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8706A1531A218E23007D0F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8706A1891A218F6E007D0F81 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8706A16C1A218E23007D0F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8706A14D1A218E23007D0F81 = {
+			isa = PBXGroup;
+			children = (
+				8706A1881A218F6E007D0F81 /* MediaPlayer.framework */,
+				8706A1581A218E23007D0F81 /* MyCustomRecorder */,
+				8706A1721A218E23007D0F81 /* MyCustomRecorderTests */,
+				8706A1571A218E23007D0F81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8706A1571A218E23007D0F81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8706A1561A218E23007D0F81 /* MyCustomRecorder.app */,
+				8706A16F1A218E23007D0F81 /* MyCustomRecorderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8706A1581A218E23007D0F81 /* MyCustomRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				8706A15D1A218E23007D0F81 /* AppDelegate.h */,
+				8706A15E1A218E23007D0F81 /* AppDelegate.m */,
+				8706A1601A218E23007D0F81 /* MainViewController.h */,
+				8706A1611A218E23007D0F81 /* MainViewController.m */,
+				8706A18E1A219032007D0F81 /* FileViewController.h */,
+				8706A18F1A219032007D0F81 /* FileViewController.m */,
+				8706A18A1A219032007D0F81 /* CameraViewController.h */,
+				8706A18B1A219032007D0F81 /* CameraViewController.m */,
+				8706A18C1A219032007D0F81 /* CustomPlayerController.h */,
+				8706A18D1A219032007D0F81 /* CustomPlayerController.m */,
+				8706A1901A219032007D0F81 /* VideoPlaybackController.h */,
+				8706A1911A219032007D0F81 /* VideoPlaybackController.m */,
+				8706A1631A218E23007D0F81 /* Main.storyboard */,
+				8706A1661A218E23007D0F81 /* Images.xcassets */,
+				8706A1681A218E23007D0F81 /* LaunchScreen.xib */,
+				8706A1591A218E23007D0F81 /* Supporting Files */,
+			);
+			path = MyCustomRecorder;
+			sourceTree = "<group>";
+		};
+		8706A1591A218E23007D0F81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8706A15A1A218E23007D0F81 /* Info.plist */,
+				8706A15B1A218E23007D0F81 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8706A1721A218E23007D0F81 /* MyCustomRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8706A1751A218E23007D0F81 /* MyCustomRecorderTests.m */,
+				8706A1731A218E23007D0F81 /* Supporting Files */,
+			);
+			path = MyCustomRecorderTests;
+			sourceTree = "<group>";
+		};
+		8706A1731A218E23007D0F81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8706A1741A218E23007D0F81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8706A1551A218E23007D0F81 /* MyCustomRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8706A1791A218E23007D0F81 /* Build configuration list for PBXNativeTarget "MyCustomRecorder" */;
+			buildPhases = (
+				8706A1521A218E23007D0F81 /* Sources */,
+				8706A1531A218E23007D0F81 /* Frameworks */,
+				8706A1541A218E23007D0F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCustomRecorder;
+			productName = MyCustomRecorder;
+			productReference = 8706A1561A218E23007D0F81 /* MyCustomRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8706A16E1A218E23007D0F81 /* MyCustomRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8706A17C1A218E23007D0F81 /* Build configuration list for PBXNativeTarget "MyCustomRecorderTests" */;
+			buildPhases = (
+				8706A16B1A218E23007D0F81 /* Sources */,
+				8706A16C1A218E23007D0F81 /* Frameworks */,
+				8706A16D1A218E23007D0F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8706A1711A218E23007D0F81 /* PBXTargetDependency */,
+			);
+			name = MyCustomRecorderTests;
+			productName = MyCustomRecorderTests;
+			productReference = 8706A16F1A218E23007D0F81 /* MyCustomRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8706A14E1A218E23007D0F81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ahmed Bakir";
+				TargetAttributes = {
+					8706A1551A218E23007D0F81 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					8706A16E1A218E23007D0F81 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 8706A1551A218E23007D0F81;
+					};
+				};
+			};
+			buildConfigurationList = 8706A1511A218E23007D0F81 /* Build configuration list for PBXProject "MyCustomRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8706A14D1A218E23007D0F81;
+			productRefGroup = 8706A1571A218E23007D0F81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8706A1551A218E23007D0F81 /* MyCustomRecorder */,
+				8706A16E1A218E23007D0F81 /* MyCustomRecorderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8706A1541A218E23007D0F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8706A1651A218E23007D0F81 /* Main.storyboard in Resources */,
+				8706A16A1A218E23007D0F81 /* LaunchScreen.xib in Resources */,
+				8706A1671A218E23007D0F81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8706A16D1A218E23007D0F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8706A1521A218E23007D0F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8706A1941A219032007D0F81 /* FileViewController.m in Sources */,
+				8706A1621A218E23007D0F81 /* MainViewController.m in Sources */,
+				8706A1921A219032007D0F81 /* CameraViewController.m in Sources */,
+				8706A1931A219032007D0F81 /* CustomPlayerController.m in Sources */,
+				8706A15F1A218E23007D0F81 /* AppDelegate.m in Sources */,
+				8706A1951A219032007D0F81 /* VideoPlaybackController.m in Sources */,
+				8706A15C1A218E23007D0F81 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8706A16B1A218E23007D0F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8706A1761A218E23007D0F81 /* MyCustomRecorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8706A1711A218E23007D0F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8706A1551A218E23007D0F81 /* MyCustomRecorder */;
+			targetProxy = 8706A1701A218E23007D0F81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8706A1631A218E23007D0F81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8706A1641A218E23007D0F81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8706A1681A218E23007D0F81 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8706A1691A218E23007D0F81 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8706A1771A218E23007D0F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8706A1781A218E23007D0F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8706A17A1A218E23007D0F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCustomRecorder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8706A17B1A218E23007D0F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCustomRecorder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8706A17D1A218E23007D0F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyCustomRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCustomRecorder.app/MyCustomRecorder";
+			};
+			name = Debug;
+		};
+		8706A17E1A218E23007D0F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyCustomRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCustomRecorder.app/MyCustomRecorder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8706A1511A218E23007D0F81 /* Build configuration list for PBXProject "MyCustomRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8706A1771A218E23007D0F81 /* Debug */,
+				8706A1781A218E23007D0F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8706A1791A218E23007D0F81 /* Build configuration list for PBXNativeTarget "MyCustomRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8706A17A1A218E23007D0F81 /* Debug */,
+				8706A17B1A218E23007D0F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8706A17C1A218E23007D0F81 /* Build configuration list for PBXNativeTarget "MyCustomRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8706A17D1A218E23007D0F81 /* Debug */,
+				8706A17E1A218E23007D0F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8706A14E1A218E23007D0F81 /* Project object */;
+}

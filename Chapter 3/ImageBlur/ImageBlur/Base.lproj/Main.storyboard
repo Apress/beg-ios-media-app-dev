@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ZS-PM-4M1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEO-e0-SU6">
+                                <rect key="frame" x="16" y="409" width="568" height="48"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.76862745099999996" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="4Gj-dp-yLg"/>
+                                </constraints>
+                                <state key="normal" title="Blur Light">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blurLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTN-yZ-tfA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAK-NS-FeG">
+                                <rect key="frame" x="16" y="531" width="568" height="48"/>
+                                <color key="backgroundColor" red="0.92549026010000002" green="0.23921570180000001" blue="0.2078431547" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="St9-yK-isU"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oku-24-14w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6u-ZR-8v9">
+                                <rect key="frame" x="16" y="470" width="568" height="48"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.40784313729999999" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aHU-lX-UKA"/>
+                                </constraints>
+                                <state key="normal" title="Blur Dark">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blurDark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bht-ud-c8S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ZS-PM-4M1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="BW5-0Z-2cT"/>
+                            <constraint firstItem="fEO-e0-SU6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="COz-RZ-OEq"/>
+                            <constraint firstItem="iAK-NS-FeG" firstAttribute="top" secondItem="y6u-ZR-8v9" secondAttribute="bottom" constant="13" id="CuG-zg-oKl"/>
+                            <constraint firstItem="iAK-NS-FeG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="E5y-gg-qNP"/>
+                            <constraint firstItem="8ZS-PM-4M1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Hkz-aq-uYc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8ZS-PM-4M1" secondAttribute="trailing" constant="-16" id="LJ2-Og-IHp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8ZS-PM-4M1" secondAttribute="bottom" id="VJz-iu-mhX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iAK-NS-FeG" secondAttribute="bottom" constant="21" id="XkL-mQ-EiK"/>
+                            <constraint firstItem="iAK-NS-FeG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gHG-s4-CVn"/>
+                            <constraint firstItem="fEO-e0-SU6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="koK-la-7Z8"/>
+                            <constraint firstItem="y6u-ZR-8v9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oAA-Fu-yHc"/>
+                            <constraint firstItem="y6u-ZR-8v9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sMo-Qb-bs8"/>
+                            <constraint firstItem="y6u-ZR-8v9" firstAttribute="top" secondItem="fEO-e0-SU6" secondAttribute="bottom" constant="13" id="w56-p6-FHg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="8ZS-PM-4M1" id="hqI-BE-myc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="295"/>
+        </scene>
+    </scenes>
+</document>

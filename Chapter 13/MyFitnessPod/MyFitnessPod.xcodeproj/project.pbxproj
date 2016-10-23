@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8706A0681A21678C007D0F81 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8706A0671A21678C007D0F81 /* AVFoundation.framework */; };
+		87E179211A1FEAF800D9DCB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E179201A1FEAF800D9DCB4 /* main.m */; };
+		87E179241A1FEAF800D9DCB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E179231A1FEAF800D9DCB4 /* AppDelegate.m */; };
+		87E179271A1FEAF800D9DCB4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E179261A1FEAF800D9DCB4 /* MainViewController.m */; };
+		87E1792A1A1FEAF800D9DCB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E179281A1FEAF800D9DCB4 /* Main.storyboard */; };
+		87E1792C1A1FEAF800D9DCB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E1792B1A1FEAF800D9DCB4 /* Images.xcassets */; };
+		87E1792F1A1FEAF800D9DCB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E1792D1A1FEAF800D9DCB4 /* LaunchScreen.xib */; };
+		87E1793B1A1FEAF800D9DCB4 /* MyFitnessPodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E1793A1A1FEAF800D9DCB4 /* MyFitnessPodTests.m */; };
+		87E179451A1FF14E00D9DCB4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E179441A1FF14E00D9DCB4 /* HealthKit.framework */; };
+		87E179471A1FF15300D9DCB4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E179461A1FF15300D9DCB4 /* CoreMotion.framework */; };
+		87E179491A1FF15B00D9DCB4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E179481A1FF15B00D9DCB4 /* MediaPlayer.framework */; };
+		87E1794D1A1FF38000D9DCB4 /* MediaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E1794C1A1FF38000D9DCB4 /* MediaTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87E179351A1FEAF800D9DCB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87E179131A1FEAF800D9DCB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E1791A1A1FEAF800D9DCB4;
+			remoteInfo = MyFitnessPod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8706A0671A21678C007D0F81 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		87E1791B1A1FEAF800D9DCB4 /* MyFitnessPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E1791F1A1FEAF800D9DCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E179201A1FEAF800D9DCB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87E179221A1FEAF800D9DCB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87E179231A1FEAF800D9DCB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87E179251A1FEAF800D9DCB4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		87E179261A1FEAF800D9DCB4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		87E179291A1FEAF800D9DCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87E1792B1A1FEAF800D9DCB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		87E1792E1A1FEAF800D9DCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		87E179341A1FEAF800D9DCB4 /* MyFitnessPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitnessPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E179391A1FEAF800D9DCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E1793A1A1FEAF800D9DCB4 /* MyFitnessPodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFitnessPodTests.m; sourceTree = "<group>"; };
+		87E179441A1FF14E00D9DCB4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		87E179461A1FF15300D9DCB4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		87E179481A1FF15B00D9DCB4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		87E1794A1A1FF16B00D9DCB4 /* MyFitnessPod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyFitnessPod.entitlements; sourceTree = "<group>"; };
+		87E1794B1A1FF38000D9DCB4 /* MediaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewController.h; sourceTree = "<group>"; };
+		87E1794C1A1FF38000D9DCB4 /* MediaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87E179181A1FEAF800D9DCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8706A0681A21678C007D0F81 /* AVFoundation.framework in Frameworks */,
+				87E179491A1FF15B00D9DCB4 /* MediaPlayer.framework in Frameworks */,
+				87E179471A1FF15300D9DCB4 /* CoreMotion.framework in Frameworks */,
+				87E179451A1FF14E00D9DCB4 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E179311A1FEAF800D9DCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87E179121A1FEAF800D9DCB4 = {
+			isa = PBXGroup;
+			children = (
+				8706A0671A21678C007D0F81 /* AVFoundation.framework */,
+				87E179481A1FF15B00D9DCB4 /* MediaPlayer.framework */,
+				87E179461A1FF15300D9DCB4 /* CoreMotion.framework */,
+				87E179441A1FF14E00D9DCB4 /* HealthKit.framework */,
+				87E1791D1A1FEAF800D9DCB4 /* MyFitnessPod */,
+				87E179371A1FEAF800D9DCB4 /* MyFitnessPodTests */,
+				87E1791C1A1FEAF800D9DCB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87E1791C1A1FEAF800D9DCB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87E1791B1A1FEAF800D9DCB4 /* MyFitnessPod.app */,
+				87E179341A1FEAF800D9DCB4 /* MyFitnessPodTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87E1791D1A1FEAF800D9DCB4 /* MyFitnessPod */ = {
+			isa = PBXGroup;
+			children = (
+				87E1794A1A1FF16B00D9DCB4 /* MyFitnessPod.entitlements */,
+				87E179221A1FEAF800D9DCB4 /* AppDelegate.h */,
+				87E179231A1FEAF800D9DCB4 /* AppDelegate.m */,
+				87E179251A1FEAF800D9DCB4 /* MainViewController.h */,
+				87E179261A1FEAF800D9DCB4 /* MainViewController.m */,
+				87E1794B1A1FF38000D9DCB4 /* MediaTableViewController.h */,
+				87E1794C1A1FF38000D9DCB4 /* MediaTableViewController.m */,
+				87E179281A1FEAF800D9DCB4 /* Main.storyboard */,
+				87E1792B1A1FEAF800D9DCB4 /* Images.xcassets */,
+				87E1792D1A1FEAF800D9DCB4 /* LaunchScreen.xib */,
+				87E1791E1A1FEAF800D9DCB4 /* Supporting Files */,
+			);
+			path = MyFitnessPod;
+			sourceTree = "<group>";
+		};
+		87E1791E1A1FEAF800D9DCB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87E1791F1A1FEAF800D9DCB4 /* Info.plist */,
+				87E179201A1FEAF800D9DCB4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87E179371A1FEAF800D9DCB4 /* MyFitnessPodTests */ = {
+			isa = PBXGroup;
+			children = (
+				87E1793A1A1FEAF800D9DCB4 /* MyFitnessPodTests.m */,
+				87E179381A1FEAF800D9DCB4 /* Supporting Files */,
+			);
+			path = MyFitnessPodTests;
+			sourceTree = "<group>";
+		};
+		87E179381A1FEAF800D9DCB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87E179391A1FEAF800D9DCB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87E1791A1A1FEAF800D9DCB4 /* MyFitnessPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E1793E1A1FEAF800D9DCB4 /* Build configuration list for PBXNativeTarget "MyFitnessPod" */;
+			buildPhases = (
+				87E179171A1FEAF800D9DCB4 /* Sources */,
+				87E179181A1FEAF800D9DCB4 /* Frameworks */,
+				87E179191A1FEAF800D9DCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFitnessPod;
+			productName = MyFitnessPod;
+			productReference = 87E1791B1A1FEAF800D9DCB4 /* MyFitnessPod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87E179331A1FEAF800D9DCB4 /* MyFitnessPodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E179411A1FEAF800D9DCB4 /* Build configuration list for PBXNativeTarget "MyFitnessPodTests" */;
+			buildPhases = (
+				87E179301A1FEAF800D9DCB4 /* Sources */,
+				87E179311A1FEAF800D9DCB4 /* Frameworks */,
+				87E179321A1FEAF800D9DCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E179361A1FEAF800D9DCB4 /* PBXTargetDependency */,
+			);
+			name = MyFitnessPodTests;
+			productName = MyFitnessPodTests;
+			productReference = 87E179341A1FEAF800D9DCB4 /* MyFitnessPodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87E179131A1FEAF800D9DCB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ahmed Bakir";
+				TargetAttributes = {
+					87E1791A1A1FEAF800D9DCB4 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = AQYXU46U4D;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					87E179331A1FEAF800D9DCB4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 87E1791A1A1FEAF800D9DCB4;
+					};
+				};
+			};
+			buildConfigurationList = 87E179161A1FEAF800D9DCB4 /* Build configuration list for PBXProject "MyFitnessPod" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87E179121A1FEAF800D9DCB4;
+			productRefGroup = 87E1791C1A1FEAF800D9DCB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87E1791A1A1FEAF800D9DCB4 /* MyFitnessPod */,
+				87E179331A1FEAF800D9DCB4 /* MyFitnessPodTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87E179191A1FEAF800D9DCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E1792A1A1FEAF800D9DCB4 /* Main.storyboard in Resources */,
+				87E1792F1A1FEAF800D9DCB4 /* LaunchScreen.xib in Resources */,
+				87E1792C1A1FEAF800D9DCB4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E179321A1FEAF800D9DCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87E179171A1FEAF800D9DCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E1794D1A1FF38000D9DCB4 /* MediaTableViewController.m in Sources */,
+				87E179271A1FEAF800D9DCB4 /* MainViewController.m in Sources */,
+				87E179241A1FEAF800D9DCB4 /* AppDelegate.m in Sources */,
+				87E179211A1FEAF800D9DCB4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E179301A1FEAF800D9DCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E1793B1A1FEAF800D9DCB4 /* MyFitnessPodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87E179361A1FEAF800D9DCB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E1791A1A1FEAF800D9DCB4 /* MyFitnessPod */;
+			targetProxy = 87E179351A1FEAF800D9DCB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87E179281A1FEAF800D9DCB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87E179291A1FEAF800D9DCB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87E1792D1A1FEAF800D9DCB4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87E1792E1A1FEAF800D9DCB4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87E1793C1A1FEAF800D9DCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87E1793D1A1FEAF800D9DCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87E1793F1A1FEAF800D9DCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyFitnessPod/MyFitnessPod.entitlements;
+				INFOPLIST_FILE = MyFitnessPod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87E179401A1FEAF800D9DCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyFitnessPod/MyFitnessPod.entitlements;
+				INFOPLIST_FILE = MyFitnessPod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87E179421A1FEAF800D9DCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFitnessPodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitnessPod.app/MyFitnessPod";
+			};
+			name = Debug;
+		};
+		87E179431A1FEAF800D9DCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFitnessPodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitnessPod.app/MyFitnessPod";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87E179161A1FEAF800D9DCB4 /* Build configuration list for PBXProject "MyFitnessPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E1793C1A1FEAF800D9DCB4 /* Debug */,
+				87E1793D1A1FEAF800D9DCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E1793E1A1FEAF800D9DCB4 /* Build configuration list for PBXNativeTarget "MyFitnessPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E1793F1A1FEAF800D9DCB4 /* Debug */,
+				87E179401A1FEAF800D9DCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E179411A1FEAF800D9DCB4 /* Build configuration list for PBXNativeTarget "MyFitnessPodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E179421A1FEAF800D9DCB4 /* Debug */,
+				87E179431A1FEAF800D9DCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87E179131A1FEAF800D9DCB4 /* Project object */;
+}

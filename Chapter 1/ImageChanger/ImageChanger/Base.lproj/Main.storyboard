@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QG-cd-GTj">
+                                <rect key="frame" x="0.0" y="552" width="600" height="48"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.76862745099999996" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="IKN-4v-eo3"/>
+                                </constraints>
+                                <state key="normal" title="CHANGE IMAGE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ub2-CM-i3k"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alpaca-plain.png" translatesAutoresizingMaskIntoConstraints="NO" id="hbF-1p-mv1">
+                                <rect key="frame" x="144" y="144" width="312" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="4Rn-sV-VyL"/>
+                                    <constraint firstAttribute="height" constant="312" id="uUu-8u-9Hv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="hbF-1p-mv1" secondAttribute="centerX" id="7cI-t0-vak"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8QG-cd-GTj" secondAttribute="trailing" constant="-16" id="920-h9-bdR"/>
+                            <constraint firstAttribute="centerY" secondItem="hbF-1p-mv1" secondAttribute="centerY" id="HT8-fZ-FAv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8QG-cd-GTj" secondAttribute="bottom" id="cnT-9s-AOS"/>
+                            <constraint firstItem="8QG-cd-GTj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="dTN-3F-L0o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeButton" destination="8QG-cd-GTj" id="IFb-Gr-zex"/>
+                        <outlet property="imageView" destination="hbF-1p-mv1" id="z3H-Cq-55V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alpaca-plain.png" width="1224" height="1632"/>
+    </resources>
+</document>

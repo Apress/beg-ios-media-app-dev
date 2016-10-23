@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8706A0DB1A2177D1007D0F81 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8706A0DA1A2177D1007D0F81 /* FileViewController.m */; };
+		870CEB2119F3B3F1006DCC67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CEB2019F3B3F1006DCC67 /* AppDelegate.swift */; };
+		870CEB2319F3B3F1006DCC67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CEB2219F3B3F1006DCC67 /* ViewController.swift */; };
+		870CEB2619F3B3F1006DCC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870CEB2419F3B3F1006DCC67 /* Main.storyboard */; };
+		870CEB2819F3B3F1006DCC67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870CEB2719F3B3F1006DCC67 /* Images.xcassets */; };
+		870CEB2B19F3B3F1006DCC67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870CEB2919F3B3F1006DCC67 /* LaunchScreen.xib */; };
+		870CEB3719F3B3F1006DCC67 /* SwiftAVPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CEB3619F3B3F1006DCC67 /* SwiftAVPlayerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		870CEB3119F3B3F1006DCC67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 870CEB1319F3B3F0006DCC67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 870CEB1A19F3B3F0006DCC67;
+			remoteInfo = SwiftAVPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8706A0D91A2177D1007D0F81 /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		8706A0DA1A2177D1007D0F81 /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		870CEB1B19F3B3F0006DCC67 /* SwiftAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		870CEB1F19F3B3F1006DCC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870CEB2019F3B3F1006DCC67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		870CEB2219F3B3F1006DCC67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		870CEB2519F3B3F1006DCC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		870CEB2719F3B3F1006DCC67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		870CEB2A19F3B3F1006DCC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		870CEB3019F3B3F1006DCC67 /* SwiftAVPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAVPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		870CEB3519F3B3F1006DCC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870CEB3619F3B3F1006DCC67 /* SwiftAVPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAVPlayerTests.swift; sourceTree = "<group>"; };
+		87DDF1E419F44471007EC788 /* SwiftAVPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAVPlayer-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		870CEB1819F3B3F0006DCC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870CEB2D19F3B3F1006DCC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		870CEB1219F3B3F0006DCC67 = {
+			isa = PBXGroup;
+			children = (
+				870CEB1D19F3B3F0006DCC67 /* SwiftAVPlayer */,
+				870CEB3319F3B3F1006DCC67 /* SwiftAVPlayerTests */,
+				870CEB1C19F3B3F0006DCC67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		870CEB1C19F3B3F0006DCC67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				870CEB1B19F3B3F0006DCC67 /* SwiftAVPlayer.app */,
+				870CEB3019F3B3F1006DCC67 /* SwiftAVPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		870CEB1D19F3B3F0006DCC67 /* SwiftAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8706A0D91A2177D1007D0F81 /* FileViewController.h */,
+				8706A0DA1A2177D1007D0F81 /* FileViewController.m */,
+				870CEB2019F3B3F1006DCC67 /* AppDelegate.swift */,
+				870CEB2219F3B3F1006DCC67 /* ViewController.swift */,
+				870CEB2419F3B3F1006DCC67 /* Main.storyboard */,
+				870CEB2719F3B3F1006DCC67 /* Images.xcassets */,
+				870CEB2919F3B3F1006DCC67 /* LaunchScreen.xib */,
+				870CEB1E19F3B3F0006DCC67 /* Supporting Files */,
+			);
+			path = SwiftAVPlayer;
+			sourceTree = "<group>";
+		};
+		870CEB1E19F3B3F0006DCC67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87DDF1E419F44471007EC788 /* SwiftAVPlayer-Bridging-Header.h */,
+				870CEB1F19F3B3F1006DCC67 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		870CEB3319F3B3F1006DCC67 /* SwiftAVPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				870CEB3619F3B3F1006DCC67 /* SwiftAVPlayerTests.swift */,
+				870CEB3419F3B3F1006DCC67 /* Supporting Files */,
+			);
+			path = SwiftAVPlayerTests;
+			sourceTree = "<group>";
+		};
+		870CEB3419F3B3F1006DCC67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				870CEB3519F3B3F1006DCC67 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		870CEB1A19F3B3F0006DCC67 /* SwiftAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870CEB3A19F3B3F1006DCC67 /* Build configuration list for PBXNativeTarget "SwiftAVPlayer" */;
+			buildPhases = (
+				870CEB1719F3B3F0006DCC67 /* Sources */,
+				870CEB1819F3B3F0006DCC67 /* Frameworks */,
+				870CEB1919F3B3F0006DCC67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftAVPlayer;
+			productName = SwiftAVPlayer;
+			productReference = 870CEB1B19F3B3F0006DCC67 /* SwiftAVPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		870CEB2F19F3B3F1006DCC67 /* SwiftAVPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870CEB3D19F3B3F1006DCC67 /* Build configuration list for PBXNativeTarget "SwiftAVPlayerTests" */;
+			buildPhases = (
+				870CEB2C19F3B3F1006DCC67 /* Sources */,
+				870CEB2D19F3B3F1006DCC67 /* Frameworks */,
+				870CEB2E19F3B3F1006DCC67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870CEB3219F3B3F1006DCC67 /* PBXTargetDependency */,
+			);
+			name = SwiftAVPlayerTests;
+			productName = SwiftAVPlayerTests;
+			productReference = 870CEB3019F3B3F1006DCC67 /* SwiftAVPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		870CEB1319F3B3F0006DCC67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ahmed Bakir";
+				TargetAttributes = {
+					870CEB1A19F3B3F0006DCC67 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					870CEB2F19F3B3F1006DCC67 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 870CEB1A19F3B3F0006DCC67;
+					};
+				};
+			};
+			buildConfigurationList = 870CEB1619F3B3F0006DCC67 /* Build configuration list for PBXProject "SwiftAVPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 870CEB1219F3B3F0006DCC67;
+			productRefGroup = 870CEB1C19F3B3F0006DCC67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				870CEB1A19F3B3F0006DCC67 /* SwiftAVPlayer */,
+				870CEB2F19F3B3F1006DCC67 /* SwiftAVPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		870CEB1919F3B3F0006DCC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870CEB2619F3B3F1006DCC67 /* Main.storyboard in Resources */,
+				870CEB2B19F3B3F1006DCC67 /* LaunchScreen.xib in Resources */,
+				870CEB2819F3B3F1006DCC67 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870CEB2E19F3B3F1006DCC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		870CEB1719F3B3F0006DCC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8706A0DB1A2177D1007D0F81 /* FileViewController.m in Sources */,
+				870CEB2319F3B3F1006DCC67 /* ViewController.swift in Sources */,
+				870CEB2119F3B3F1006DCC67 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870CEB2C19F3B3F1006DCC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870CEB3719F3B3F1006DCC67 /* SwiftAVPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		870CEB3219F3B3F1006DCC67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 870CEB1A19F3B3F0006DCC67 /* SwiftAVPlayer */;
+			targetProxy = 870CEB3119F3B3F1006DCC67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		870CEB2419F3B3F1006DCC67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				870CEB2519F3B3F1006DCC67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		870CEB2919F3B3F1006DCC67 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				870CEB2A19F3B3F1006DCC67 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		870CEB3819F3B3F1006DCC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		870CEB3919F3B3F1006DCC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		870CEB3B19F3B3F1006DCC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SwiftAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAVPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		870CEB3C19F3B3F1006DCC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SwiftAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAVPlayer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		870CEB3E19F3B3F1006DCC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAVPlayer.app/SwiftAVPlayer";
+			};
+			name = Debug;
+		};
+		870CEB3F19F3B3F1006DCC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAVPlayer.app/SwiftAVPlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		870CEB1619F3B3F0006DCC67 /* Build configuration list for PBXProject "SwiftAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870CEB3819F3B3F1006DCC67 /* Debug */,
+				870CEB3919F3B3F1006DCC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870CEB3A19F3B3F1006DCC67 /* Build configuration list for PBXNativeTarget "SwiftAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870CEB3B19F3B3F1006DCC67 /* Debug */,
+				870CEB3C19F3B3F1006DCC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870CEB3D19F3B3F1006DCC67 /* Build configuration list for PBXNativeTarget "SwiftAVPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870CEB3E19F3B3F1006DCC67 /* Debug */,
+				870CEB3F19F3B3F1006DCC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 870CEB1319F3B3F0006DCC67 /* Project object */;
+}

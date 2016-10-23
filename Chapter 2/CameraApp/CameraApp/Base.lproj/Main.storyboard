@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-xo-oGR">
+                                <rect key="frame" x="156" y="166" width="288" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="0zA-Zh-5gB"/>
+                                    <constraint firstAttribute="width" constant="288" id="DgG-7M-PpE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfd-HB-hQc">
+                                <rect key="frame" x="156" y="532" width="288" height="48"/>
+                                <color key="backgroundColor" red="0.33724308780000001" green="0.6111864118" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="GxH-74-2KZ"/>
+                                    <constraint firstAttribute="width" constant="288" id="foN-vQ-dBj">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="400"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="TAKE PICTURE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPickerActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGj-Ox-6ye"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="nTE-xo-oGR" secondAttribute="centerY" id="2l7-Af-zxi"/>
+                            <constraint firstAttribute="centerX" secondItem="nTE-xo-oGR" secondAttribute="centerX" id="Agn-JN-YBA"/>
+                            <constraint firstAttribute="centerX" secondItem="Bfd-HB-hQc" secondAttribute="centerX" id="OI8-zM-eC8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bfd-HB-hQc" secondAttribute="bottom" constant="20" id="hnN-cR-NT4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="Bfd-HB-hQc" id="0Zl-3D-6tV"/>
+                        <outlet property="imageView" destination="nTE-xo-oGR" id="qvy-bP-MCV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Placeholder" width="633" height="633"/>
+    </resources>
+</document>

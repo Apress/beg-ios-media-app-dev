@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0z-t1-XrB">
+                                <rect key="frame" x="16" y="532" width="568" height="48"/>
+                                <color key="backgroundColor" red="0.92549026010000002" green="0.23921570180000001" blue="0.2078431547" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="LZd-fP-bUL"/>
+                                </constraints>
+                                <state key="normal" title="Save to Camera Roll">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveToAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKD-Hi-Bss"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CasaLoma.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bDc-bl-NOP">
+                                <rect key="frame" x="16" y="60" width="568" height="364"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsT-c8-IKE">
+                                <rect key="frame" x="16" y="464" width="568" height="48"/>
+                                <color key="backgroundColor" red="0.33724308780000001" green="0.6111864118" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="pA4-nW-BI1"/>
+                                </constraints>
+                                <state key="normal" title="Save to &quot;Documents&quot;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveToDisk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yli-Il-8Ik"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bDc-bl-NOP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="6Et-cR-PH6"/>
+                            <constraint firstItem="c0z-t1-XrB" firstAttribute="top" secondItem="XsT-c8-IKE" secondAttribute="bottom" constant="20" id="KBp-Mc-JSK"/>
+                            <constraint firstItem="bDc-bl-NOP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="R7u-62-a4f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c0z-t1-XrB" secondAttribute="bottom" constant="20" id="Y4G-f2-JeF"/>
+                            <constraint firstItem="XsT-c8-IKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="byk-pi-00J"/>
+                            <constraint firstItem="c0z-t1-XrB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gCI-ZM-gFp"/>
+                            <constraint firstItem="c0z-t1-XrB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mun-BB-xY8"/>
+                            <constraint firstItem="XsT-c8-IKE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pxg-tz-hxZ"/>
+                            <constraint firstItem="XsT-c8-IKE" firstAttribute="top" secondItem="bDc-bl-NOP" secondAttribute="bottom" constant="40" id="qyD-CN-XOM"/>
+                            <constraint firstItem="bDc-bl-NOP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sHf-3z-EdW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CasaLoma.jpg" width="1280" height="960"/>
+    </resources>
+</document>
